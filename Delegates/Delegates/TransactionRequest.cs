@@ -1,6 +1,6 @@
 ﻿namespace Delegates
 {
-    public class TransactionRequest
+    public class TransactionRequest : IRequest
     {
     }
 }

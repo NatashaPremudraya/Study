@@ -4,12 +4,12 @@ namespace Delegates
 {
     public class Processor : IProcessor
     {
-        public bool Check(TransactionRequest request)
+        public bool Check(IRequest request)
         {
             throw new NotImplementedException();
         }
 
-        public Transaction Register(TransactionRequest request)
+        public Transaction Register(IRequest request)
         {
             throw new NotImplementedException();
         }

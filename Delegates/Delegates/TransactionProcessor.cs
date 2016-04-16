@@ -2,9 +2,9 @@ using System;
 
 namespace Delegates
 {
-    public abstract class TransactionProcessor
+    public class TransactionProcessor
     {
-        public Transaction Process(TransactionRequest request, IProcessor processor)
+        public Transaction Process(IRequest request, IProcessor processor)
         {
             if (!processor.Check(request))
                 throw new ArgumentException();
