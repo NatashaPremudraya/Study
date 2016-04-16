@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{41074375-D0DF-4A5C-8534-78BECFF9D95A}</ProjectGuid>
+    <ProjectGuid>{C50AF7B7-FAAA-427B-A32B-C03846998CCA}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Delegates</RootNamespace>
-    <AssemblyName>Delegates</AssemblyName>
+    <RootNamespace>TableTask</RootNamespace>
+    <AssemblyName>TableTask</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,7 +35,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,16 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IProcessor.cs" />
-    <Compile Include="IRequest.cs" />
-    <Compile Include="Order.cs" />
-    <Compile Include="OrderRequest.cs" />
-    <Compile Include="Processor.cs" />
+    <Compile Include="ITable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Transaction.cs" />
-    <Compile Include="TransactionProcessor.cs" />
-    <Compile Include="TransactionRequest.cs" />
+    <Compile Include="Table.cs" />
+    <Compile Include="TableGui.cs" />
+    <Compile Include="TableLogger.cs" />
+    <Compile Include="Unsubscriber.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
